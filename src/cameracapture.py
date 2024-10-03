@@ -18,5 +18,6 @@ class CameraCapture:
 
 
     def __del__(self):
+        self.cv_capture.release()
         self.neolink.terminate()
         pass
